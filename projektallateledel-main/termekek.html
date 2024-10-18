@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termékek – Állateledel Bolt</title>
+    <link rel="stylesheet" href="/projektallateledel-main/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Állateledel Bolt</h1>
+        <section class="cart">
+            <h2>Kosár</h2>
+            <ul id="cart-items"></ul>
+            <p>Összeg: <span id="total-price">0</span> Ft</p>
+            <button onclick="clearCart()">Kosár ürítése</button>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="termekek.html">Termékek</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="highlight">
+            <h2 id="termekek">Termékeink</h2>
+            <div class="grid-container">
+                <div class="item">
+                    <img src="https://prevital.eu/wp-content/uploads/2021/09/product-pouch-salmon-gravy.png" alt="Macskaeledel">
+                    <h3>Macskaeledel</h3>
+                    <p>Teljes értékű, vitaminokban gazdag eledel.</p>
+                    <p>Ár: 1500 Ft</p>
+                    <button onclick="addToCart('Macskaeledel', 1500)">Kosárba</button>
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoIKOUfAQRbRMwgTAlqywt77xMnYq8Z04t8g&s" alt="Kutyatáp">
+                    <h3>Kutyatáp</h3>
+                    <p>Kiváló minőségű kutyaeledel minden fajta számára.</p>
+                    <p>Ár: 2000 Ft</p>
+                    <button onclick="addToCart('Kutyatáp', 2000)">Kosárba</button>
+                </div>
+                <div class="item">
+                    <img src="https://digitalcontent.api.tesco.com/v2/media/ghs/0ae9b9ff-2dfc-4bc5-8b1f-81958d0c39aa/7499629f-22b2-4957-a04e-72b29cf2b9a9_701163546.jpeg?h=540&w=540" alt="Madáreledel">
+                    <h3>Madáreledel</h3>
+                    <p>Tápanyagban gazdag eleség kis madaraknak.</p>
+                    <p>Ár: 1000 Ft</p>
+                    <button onclick="addToCart('Madáreledel', 1000)">Kosárba</button>
+                </div>
+                <div class="item">
+                    <img src="https://www.europetshop.hu/img/11972/5997585322311/5997585322311.webp" alt="Haltáp">
+                    <h3>Haltáp</h3>
+                    <p>Kiváló haltáp akváriumi halaknak.</p>
+                    <p>Ár: 800 Ft</p>
+                    <button onclick="addToCart('Haltáp', 800)">Kosárba</button>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Állateledel Bolt</p>
+    </footer>
+
+    <script src="/projektallateledel-main/script.js"></script>
+</body>
+
+</html>
